@@ -15,6 +15,7 @@
   "description": "",
   "dependencies": {
     "@babel/core": "^7.2.2",
+    "aws-sdk": "^2.384.0",
     "canvasjs": "^1.8.1",
     "express": "^4.13.4",
     "fs": "0.0.1-security",
@@ -34,5 +35,8 @@
     "react-dom": "^16.6.3",
     "webpack": "^4.27.1",
     "webpack-dev-server": "^3.1.10"
+  },
+  "scripts": {
+      "start": "node index.js"
   }
 }
