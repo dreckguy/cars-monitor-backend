@@ -1,3 +1,5 @@
+const PORT = process.env.PORT || 8080;
+
 function getFormattedDate() {
     var date = new Date();
     var str = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "." + date.getMilliseconds();
@@ -79,8 +81,9 @@ var WSS = require('ws').Server;
 
 var app = express().use(express.static('public'));
 var server = http.createServer(app);
-server.listen(8080, '172.31.35.178');
-// server.listen(8080, 'localhost');
+//MARKED OUT IP FOR TESTING 
+//server.listen(8080, '172.31.35.178');
+ server.listen(PORT);
 
 var time = new Date();
 
